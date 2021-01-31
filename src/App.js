@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from "react";
+import ClassProps from "./Properties/ClassProps";
 import { ClassComp, ClassComp1 } from "./Components/ClassComp";
 import Click from "./Components/Click";
 import Counter from "./Components/Counter"
@@ -14,6 +15,10 @@ class App extends React.Component {
   render() {
     return (
     <div className="App">
+import FunctionProps from "./Properties/FunctionProps";
+function App() {
+  return (
+    <div>
       <ClassComp />
       <ClassComp1 />
       <Click />
@@ -21,6 +26,8 @@ class App extends React.Component {
       <ParentComp />
       <h1 style={this.styles}>This state</h1>
       <CompForState/>
+      <ClassProps name="Bean" job="Homework"/>
+      <FunctionProps name="Bean 1" job="Dyx"/>
     </div>
   );
   }
