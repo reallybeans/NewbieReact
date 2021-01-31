@@ -5,6 +5,7 @@ import { ClassComp, ClassComp1 } from "./Components/ClassComp";
 import Click from "./Components/Click";
 import Counter from "./Components/Counter"
 import ParentComp from "./Components/ParentComp";
+import CompForState from './Components/CompForState';
 class App extends React.Component {
   styles = {
     fontStyle: "bold",
@@ -12,13 +13,14 @@ class App extends React.Component {
   };
   render() {
     return (
-    <div>
+    <div className="App">
       <ClassComp />
       <ClassComp1 />
       <Click />
       <Counter />
       <ParentComp />
       <h1 style={this.styles}>This state</h1>
+      <CompForState/>
     </div>
   );
   }
